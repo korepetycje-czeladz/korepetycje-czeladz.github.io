@@ -31,6 +31,14 @@
   margin-right: 30%;
 }
 
+.description-continue {
+  font-family: "Patrick Hand SC";
+  font-size: 18px;
+  margin-left: 30%;
+  margin-right: 30%;
+  margin-top: -70px;
+}
+
 .bg-img {
   display: block;
   opacity: 10%;
@@ -163,6 +171,15 @@ dd {
   font-style: italic;
   font-weight: bold;
   display: inline;
+}
+
+.i-wo-bg {
+  font-size: 20px;
+  font-style: italic;
+  display: inline;
+  background: none;
+  display: inline-block;
+  margin-top: -20px;
 }
 
  /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
