@@ -447,6 +447,14 @@ footer p {
   text-align: center;
 }
 
+.white-a a {
+  color: #ffffff;
+}
+
+.white-a a:hover {
+  color: #cccccc;
+}
+
 @media (min-width: 375px) {
   header h1 {
     font-size: 36px;
