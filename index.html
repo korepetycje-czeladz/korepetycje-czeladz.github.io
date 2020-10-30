@@ -1,226 +1,494 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css"></style>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Document</title>
+    <title>Korepetycje Czeladź, Zagłębie, Metropolia GZM</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap&subset=latin-ext" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/228e894526.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" media="screen and (min-width: 576px)" href="css/small.css">
+    <link rel="stylesheet" media="screen and (min-width: 768px)" href="css/medium.css">
+    <link rel="stylesheet" media="screen and (min-width: 992px)" href="css/large.css">
 </head>
-<body>
-  <header>
-    <img class ="logo" src="https://image.flaticon.com/icons/svg/2641/2641405.svg" alt="logo">
-    <nav>
-      <ul class="nav__links">
-        <li><a href="#intro">Strona główna</a></li>
-        <li><a href="#why">Dlaczego my?</a></li>
-        <li><a href="#about">Załoga</a></li>
-        <li><a href="#faq">FAQ</a></li>
-        <li><a href="#contact">Kontakt</a></li>
-        <li><a href="#prices">Cennik</a></li>
-      </ul>
+<body data-spy="scroll" data-target="#navbar">
+
+    <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
+        <a class="navbar-brand" href="#"><i class="fas fa-headset"></i> korepetycje<span class="blue-text">czeladź</span></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ml-auto">
+            <a class="nav-item nav-link active" href="#">Strona główna</a>
+            <a class="nav-item nav-link" href="#aboutus">O nas</a>
+            <a class="nav-item nav-link" href="#portfolio">Portfolio</a>
+            <a class="nav-item nav-link" href="#prices">Oferta</a>
+            <a class="nav-item nav-link" href="#team">Zespół</a>
+            <a class="nav-item nav-link" href="#achievements">Osiągnięcia</a>
+            <a class="nav-item nav-link" href="#contact">Kontakt</a>
+          </div>
+        </div>
     </nav>
-    <a href="#reservation"><button>Rezerwacja</button></a>
-  </header>
-  <div id="intro">
-    <p class="bg-img">
-    </p>
-    <p class="motto">
-      Nie ma trudnych przedmiotów. Są tylko słabi nauczyciele.
-    </p>
-    <p class="description">
-      Masz problem z przedmiotami ścisłymi? Na myśl o angielskim oblewa Cię zimny pot?
-      <br>
-      Trzęsiesz się słysząc: <p class="i-wo-bg">Comment ça va?</p>
-    </p>
-    <p class="description-continue">
-      A może po prostu chcesz się rozwinąć i policzyć trochę macierzy?
-      <br>
-      To właśnie miejsce dla Ciebie!
-    </p>
-  </div>
-  <div id="why">
-    <h3 class="title">Dlaczego my i co nas wyróżnia?</h3>
-    <div class="description">
-      <p>
-        No właśnie. Kolejna porcja ludzi. Przecież już tyle tego w sieci... Co krok ktoś daje korepetycje.
-        <br>
-        Dokładnie! Masz całkowitą rację! Co więcej: ludzie, którzy parają się tym zajeciem, najprawdopodobniej są dobrzy w tym co robią. Po co więc my w tym wszystkim?
-      </p>
-      <dl>
-        <dt><div class="question">Po pierwsze:</div><i>&#xa1;Buenos d&#xcd;as!</i></dt>
-        <dd>:)</dd>
 
-        <dt><div class="question">Po drugie:</div>gama specjalistów</dt>
-        <dd>masz dostęp do specjalistów w swoich dziedzinach. Owszem, wielu z nas jest w stanie zająć się kilkoma przedmiotami, ale nie ma u nas "człowieka-orkiestry". Jeśli coś jest do wszystkiego... resztę powiedzenia znasz.</dd>
-        
-        <dt><div class="question">Po trzecie:</div>praktyka czyni mistrza!</dt>
-        <dd>znamy się na swoich dziedzinach i lubimy uczyć. Jesteśmy przygotowani teoretycznie jak i praktycznie z danego materiału. Na codzień zawodowo zajmujemy się tym, co chcemy Ci przekazać i w czym możemy Ci pomóc!</dd>
-        
-        <dt><div class="question">Po czwarte:</div><i>Sky is the limit</i></dt>
-        <dd>stale podnosimy nasze kwalifikacje. Tutaj nie ma za wiele do napisania. Jak powiedział Konfucjusz: <div class="i-wo-bg">Wiem, że nic nie wiem</div></dd>
-        
-        <dt><div class="question">Po piąte:</div>zero nudy</dt>
-        <dd>jeśli nie udało się nam wpuścić Cię w maliny z powyższym cytatem (autorem jest oczywiście Sokrates), to punkt dla Ciebie! Umiejętność czytania i wyciagania wniosków, lekcja pierwsza!</dd>
-      </dl>
-    </div>
-  </div>
-  <div id="about">
-    <h3 class="title">Załoga, czyli kim jesteśmy</h3>
-    <p class="description">
-      Kim jesteśmy? Skąd przyszliśmy? Dokąd zmierzamy?
-      <br>
-      Poznaj nas! Zobacz z kim przyjdzie Ci spedzić cenne minuty nauki!
-      <br>
-      Sprawdź, kto wypruje Ci kartki z zeszytu, a kto od razu wyrzuci go za okno!
-    </p>
-    <!-- card 1 -->
-    <div class="card">
-      <img src="av1.jpg">
-      <h3 class="card-name">John Doe</h3>
-      Mały, skoczny, wyszczekany
-      O macierzach pogadamy
-      <p class="card-title">
-        Harvard University
-      </p>
-      <a href="#"><i class="fa fa-dribbble"></i></a>
-      <a href="#"><i class="fa fa-twitter"></i></a>
-      <a href="#"><i class="fa fa-linkedin"></i></a>
-      <a href="#"><i class="fa fa-facebook"></i></a>
-    </div>
-    <!-- card 2 -->
-    <div class="card">
-      <img src="av2.png">
-      <h3 class="card-name">Jane Doe</h3>
-      Fhąse manikjór, pedikjór, obgryzanie skórek od paznokci i gryzienie pięt
-      <p class="card-title">
-        Wyzsza Szkoła Robienia Hałasu (WSRH)
-      </p>
-      <a href="#"><i class="fa fa-dribbble"></i></a>
-      <a href="#"><i class="fa fa-twitter"></i></a>
-      <a href="#"><i class="fa fa-linkedin"></i></a>
-      <a href="#"><i class="fa fa-facebook"></i></a>
-    </div>
-    <!-- card 3 -->
-    <div class="card">
-      <img src="av3.jpg">
-      <h3 class="card-name">DiobeU</h3>
-      Oddam Cię Mrocznemu Panu w ofierze, chodź przejdziemy się, pogadamy
-      <p class="card-title">
-        Akademia LUX
-      </p>
-      <a href="#"><i class="fa fa-dribbble"></i></a>
-      <a href="#"><i class="fa fa-twitter"></i></a>
-      <a href="#"><i class="fa fa-linkedin"></i></a>
-      <a href="#"><i class="fa fa-facebook"></i></a>
-    </div>
-  </div>
-  <div id="faq">
-    <h3 class="title">Pytania i odpowiedzi</h3>
-    <div class="description">
-      <dl>
-        <dt><div class="question">Pytanie 1:</div>Zawsze sikasz przez zapięty rozporek?</dt>
-        <dd>Zawsze!</dd>
-        <dt><div class="question">Pytanie 2:</div>Dlaczego Siara uwolnił Kilera?</dt>
-        <dd>Nie wiem, Kiler był u Siary tylko raz, a potem zniknął. Siara nawet jak wie, to mi nie powie!</dd>
-      </dl>
-    </div>
-  </div>
-  <div id="contact">
-    <h3 class="title">Kontakt</h3>
-    <!-- card 1 -->
-    <div class="flip-card">
-      <div class="flip-card-inner">
-        <div class="flip-card-front">
-          <img src="phone.png" alt="Avatar">
+    <header id="home">
+        <div class="hero-img">
+            <div class="hero-shadow"></div>
+            <div class="hero-text">
+                <h1 class="os-animation visibility" data-animation="bounceInUp" data-delay=".2s">Witaj na korepetycje<span class="blue-text">czeladź</span></h1>
+                <p class="os-animation visibility" data-animation="bounceInUp" data-delay=".5s">w miejscu, gdzie uczymy z pasją!</p>
+                <a href="#aboutus" class="btn btn-outline-light os-animation visibility" data-animation="bounceInUp" data-delay=".8s">poznaj nas</a>
+            </div>
+            <a href="#aboutus">
+                <i class="fas fa-chevron-down"></i>
+            </a>
         </div>
-        <div class="flip-card-back">
-          <h3>Kontakt z nami</h1>
-          <p>Wojtuś Placuś</p>
-          <p>0-700-123-456</p>
-        </div>
-      </div>
-    </div>    
-    <!-- card 2 -->
-    <div class="flip-card">
-      <div class="flip-card-inner">
-        <div class="flip-card-front">
-          <img src="fb.png" alt="Avatar">
-        </div>
-        <div class="flip-card-back">
-          <h3>Znajdź nas na Facebooku</h1>
-          <p><a href="https://fb.com">fb.com/dupa</a></p>
-        </div>
-      </div>
-    </div>    
-  </div>
-  <div id="prices">
-    <h3 class="title">Cennik</h3>
-    <p class="description">
-      Co jest w cenie? Czgo potrzebuję? Sprawdź! Poniżej umieściliśmy trzy opcje, wybierz tę, która najbardziej Ci odpowiada!
-    </p>
-    <div class="container">
-<!-- prices begin -->
-<table id="prices">
-  <tbody>
-    <tr>
-      <td>
-        <h2>Podstawowy</h2>
-        <h4>50 PLN</h4>
-        <h5>Oszczędzasz 0 PLN</h5>
-        <p>60 minut zajęć</p>
-        <p>1 spotkanie w tygodniu</p>
-        <p>materiały zapewnia opiekun</p>
-        <p>-</p>
-        <p>-</p>
-        <a href="#">Wybierz</a>
-      </td>
+    </header>
 
-      <td class="popular">
-        <h2>Standard</h2>
-        <h3>Najbardziej popularny</h3>
-        <h4>95 PLN</h4>
-        <h5>Oszczędzasz 5 PLN</h5>
-        <p>120 minut zajęć</p>
-        <p>1 lub 2 spotkania w tygodniu</p>
-        <p>materiały zapewnia opiekun</p>
-        <p>nauka online</p>
-        <p>-</p>
-        <a href="#">Wybierz</a>
-      </td>
+    <main>
+        <section id="aboutus" class="scroll-fix">
+            <div class="jumbotron jumbotron-fluid">
+                <div class="wrapper">
+                    <h2>O nas</h2>
+                    <div class="underline"></div>
 
-      <td>
-        <h2>Miesięczny</h2>
-        <h4>350 PLN</h4>
-        <h5>Oszczędzasz 50 PLN</h5>
-        <p>480 minut zajęć</p>
-        <p>1 lub 2 spotkania w tygodniu</p>
-        <p>materiały zapewnia opiekun</p>
-        <p>nauka online</p>
-        <p>dojazd do ucznia*</p>
-        <a href="#">Wybierz</a>
-      </td>
-    </tr>
-  </tbody>
-</table>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-<script>$(document).ready(function(){
-  $('#prices td').wrapInner('<div class="pricing-table" />'); 
-});</script>
-<!-- prices end -->
-  </div>
-  <div id="reservation">
-    <h3 class="title">Rezerwacja</h3>
-    <p class="description">
-      Zastanawiasz się? Zadzwoń, zapytaj, umów się i sprawdź! Nie masz pytań? Kilka kliknięć i rezerwacja gotowa!
-    </p>
-    <p class="reservation-link">
-      <a href="#">Formularz rezerwacji</a>
-    </p>
-    <p class="calendar">
-      <iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=2&amp;bgcolor=%23ffffff&amp;ctz=Europe%2FWarsaw&amp;showPrint=0&amp;showTabs=1&amp;showCalendars=0&amp;showTitle=0&amp;src=Z3Z1cW1jb2c5cW5pcmRrM3M5dTQ3YTljZGtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%23F6BF26" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
-    </p>
-    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSePID_JzQM7KPUNfRufy3ZbiyL0Ufuzzi-AZcQbuGdoC6fgQg/viewform?embedded=true" width="640" height="1021" frameborder="0" marginheight="0" marginwidth="0">Ładuję…</iframe>
-  </div>
+                    <div class="row">
+
+                        <div class="col-sm-6 col-md-4 text-center aboutus-hover os-animation visibility" data-animation="bounceIn" data-delay=".1s">
+                            <p>
+                                <i class="fas fa-mobile-alt"></i>
+                            </p>
+                            <h3>mobile gaming</h3>
+                            <p>Tworzymy gry na urządzenia mobilne</p>
+                        </div>
+
+                        <div class="col-sm-6 col-md-4 text-center aboutus-hover os-animation visibility" data-animation="bounceIn" data-delay=".2s">
+                            <p>
+                                <i class="fas fa-desktop"></i>
+                            </p>
+                            <h3>Desktop gaming</h3>
+                            <p>Tworzymy gry na desktopy</p>
+                        </div>
+
+                        <div class="col-sm-6 col-md-4 text-center aboutus-hover os-animation visibility" data-animation="bounceIn" data-delay=".3s">
+                            <p>
+                                <i class="fas fa-file-code"></i>
+                            </p>
+                            <h3>najwyższe standardy</h3>
+                            <p>Zachowujemy najwyższe standardy podczas pisania kodu</p>
+                        </div>
+
+                        <div class="col-sm-6 col-md-4 text-center aboutus-hover os-animation visibility" data-animation="bounceIn" data-delay=".4s">
+                            <p>
+                                <i class="fas fa-paw"></i>
+                            </p>
+                            <h3>kochamy zwierzęta</h3>
+                            <p>Gry bezpieczne dla środowiska</p>
+                        </div>
+
+                        <div class="col-sm-6 col-md-4 text-center aboutus-hover os-animation visibility" data-animation="bounceIn" data-delay=".5s">
+                            <p>
+                                <i class="fas fa-hamburger"></i>
+                            </p>
+                            <h3>Dobre papu</h3>
+                            <p>Lubimy dobre papu</p>
+                        </div>
+
+                        <div class="col-sm-6 col-md-4 text-center aboutus-hover os-animation visibility" data-animation="bounceIn" data-delay=".6s">
+                            <p>
+                                <i class="fas fa-glass-cheers"></i>
+                            </p>
+                            <h3>Świetne relacje</h3>
+                            <p>Zachowujemy Świetne relacje z naszymi klientami</p>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <section id="aboutus-hero">
+        <div class="jumbotron jumbotron-fluid">
+            <div class="aboutus-shadow"></div>
+            <div class="wrapper">
+                <h2 class="os-animation visibility" data-animation="fadeIn">Tworzymy gry na platformy</h2>
+                <div class="underline os-animation visibility" data-animation="fadeIn" data-delay="0.1s"></div>
+
+                <div class="row">
+
+                    <div class="col-lg-4 text-center about-hero-item os-animation visibility" data-animation="bounceInUp" data-delay="0.2s">
+                        <h3>PC</h3>
+                        <p>
+                            <i class="fas fa-desktop"></i>
+                        </p>
+                        <p>Desktop</p>
+                    </div>
+
+                    <div class="col-lg-4 text-center about-hero-item os-animation visibility" data-animation="bounceInUp" data-delay="0.3s">
+                        <h3>PS</h3>
+                        <p>
+                            <i class="fab fa-playstation"></i>
+                        </p>
+                        <p>PlayStation</p>
+                    </div>
+
+                    <div class="col-lg-4 text-center about-hero-item os-animation visibility" data-animation="bounceInUp" data-delay="0.4s">
+                        <h3>XBox</h3>
+                        <p>
+                            <i class="fab fa-xbox"></i>
+                        </p>
+                        <p>XBox</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="scroll-fix">
+        <div class="jumbotron jumbotron-fluid">
+            <h2>Portfolio</h2>
+            <div class="underline"></div>
+    
+            <!-- mobile portfolio -->
+            <div class="wrapper">
+                <div class="card-deck d-lg-none">
+                    <div class="card">
+                    <img src="img/car1.jpg" class="card-img-top" alt="Car-1">
+                    <div class="card-body">
+                        <h5 class="card-title">ProX</h5>
+                        <p class="card-text">Jakies wypociny o prox</p>
+                    </div>
+                    </div>
+                    <div class="card">
+                    <img src="img/car2.jpg" class="card-img-top" alt="Car2">
+                    <div class="card-body">
+                        <h5 class="card-title">Resorasoriks</h5>
+                        <p class="card-text">Tekst o resorakach</p>
+                    </div>
+                    </div>
+                </div>
+    
+                <!-- desktop portfolio -->
+
+                <div id="carouselExampleCaptions" class="carousel slide d-none d-lg-block" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                </ol>
+                    <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/car1.jpg" class="d-block w-100" alt="Powazny samochód numer 1">
+                        <div class="carousel-caption d-none d-md-block">
+                        <h5>Pro-X football</h5>
+                        <p>Niby piłka, a obrazek inny...</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/car2.jpg" class="d-block w-100" alt="Powazny samochód numer 2">
+                        <div class="carousel-caption d-none d-md-block">
+                        <h5>Resorak</h5>
+                        <p>A to je samochodzik oł jea!</p>
+                        </div>
+                    </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="prices" class="scroll-fix">
+        <div class="jumbotron jumbotron-fluid">
+            <h2 class="os-animation visibility" data-animation="fadeIn">ceny</h2>
+            <div class="underline os-animation visibility" data-animation="fadeIn" data-delay=".1s"></div>
+            <div class="price-wrap row text-center justify-content-center os-animation visibility" data-animation="fadeIn" data-delay=".4s">
+
+                <div class="col-md-6 col-xl-4">
+                    <div class="price-box">
+                        <h3>mobile</h3>
+                        <hr>
+                        <p><span>Urządzenia:</span> <i class="fas fa-mobile-alt"></i></p>
+                        <p><span>Długość gry:</span> Krótka</p>
+                        <p><span>Grafika:</span> średnia</p>
+                        <p><span>Online:</span> nie</p>
+                        <p class="price">499zł</p>
+                        <button class="btn btn-secondary">zamawiam</button>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-xl-4">
+                    <div class="price-box">
+                        <h3>mobile & pc</h3>
+                        <hr>
+                        <p><span>Urządzenia:</span> <i class="fas fa-mobile-alt"></i> <i class="fas fa-desktop"></i></p>
+                        <p><span>Długość gry:</span> srednia</p>
+                        <p><span>Grafika:</span> dobra</p>
+                        <p><span>Online:</span> tak</p>
+                        <p class="price">2499zł</p>
+                        <button class="btn btn-primary">zamawiam</button>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-xl-4">
+                    <div class="price-box">
+                        <h3>full option</h3>
+                        <hr>
+                        <p><span>Urządzenia:</span> <i class="fas fa-mobile-alt"></i> <i class="fas fa-desktop"></i> <i class="fas fa-gamepad"></i></p>
+                        <p><span>Długość gry:</span> b. długa</p>
+                        <p><span>Grafika:</span> świetna</p>
+                        <p><span>Online:</span> tak</p>
+                        <p class="price">4999zł</p>
+                        <button class="btn btn-secondary">zamawiam</button>
+                    </div>
+                </div>
+               
+            </div>
+            <div class="price-text wrapper text-center">
+                <p class="price-info">
+                    Skorzystaj z jednego z trzech głównych pakietów
+                </p>
+                <p class="text-muted">
+                    pakiet <strong>FULL PACK</strong> zawiera wiecej gier ble ble ble
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="team" class="scroll-fix">
+        <div class="jumbotron jumbotron-fluid">
+            <div class="team-shadow"></div>
+            <h2 class="os-animation visibility" data-animation="fadeIn">team</h2>
+            <div class="underline os-animation visibility" data-animation="fadeIn" data-delay=".1s"></div>
+
+            <div class="card-deck wrapper team-carousel">
+                <!-- person 0 -->
+                <div class="card">
+                  <img src="img/team/andrzej.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">andrzej</h5>
+                    <p class="card-text">Specjalista od zwalczania karaczanów, pochłaniacz witaminy D3 i światła UV.</p>
+                  </div>
+                  <div class="card-footer justify-content-around row">
+                      BRAK TERMINÓW
+                  </div>
+                </div>
+
+                <!-- person 1 -->
+                <div class="card">
+                  <img src="img/team/mateusz6.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">mateusz</h5>
+                    <p class="card-text">Fizyka, programowanie, bezpieczeństwo IT, język japoński i mechanika kwantowa. Strażnik kluczy i pryncypał tego cyrku.</p>
+                  </div>
+                  <div class="card-footer justify-content-around row">
+                    <a href="#contact"><i class="fab fa-slack"></i></a>
+                    <a href="#contact"><i class="fab fa-discord"></i></a>
+                  </div>
+                </div>
+
+                <!-- person 2 -->
+                <div class="card">
+                  <img src="img/team/ewelina.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">ewelina</h5>
+                    <p class="card-text">Kapitan łajby Ruda Szekla. Specjalizacja językowa: angielski, arabski, turecki oraz hindi. Śpiew, gitara, fortepian.</p>
+                  </div>
+                  <div class="card-footer justify-content-around row">
+                    Tylko stacjonarnie - u ucznia
+                  </div>
+                </div>
+
+                <!-- person 3 -->
+                <div class="card">
+                  <img src="img/team/bartek.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">bartek</h5>
+                    <p class="card-text">Ewangelista Pythona. Ma w domu ołtarzyk z Czystością Kodu. Przeprowadzi Cię za rękę również przez algorytmy i struktury danych.</p>
+                  </div>
+                  <div class="card-footer justify-content-around row">
+                    <a href="#contact"><i class="fab fa-slack"></i></a>
+                    <a href="#contact"><i class="fab fa-discord"></i></a>
+                  </div>
+                </div>
+
+                <!-- person 4 -->
+                <div class="card">
+                    <img src="img/team/ania.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">ania</h5>
+                      <p class="card-text">Na co dzień nauczycielka matematyki i fizyki. Z chęcią podzieli się wiedzą na temat śpiewu o ile nie będzie akurat na próbie chóru.</p>
+                    </div>
+                    <div class="card-footer justify-content-around row">
+                        Stacjonarnie
+                    </div>
+                  </div>
+
+                <!-- person 5 -->
+                <div class="card">
+                    <img src="img/team/mateusz2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">mateusz</h5>
+                      <p class="card-text">Inżynier procesu w ArcelorMittal. Poza metalurgią wprowadzi Cię w świat Front-Endu. HTML, CSS, JavaScript, Angular, ReactJS.</p>
+                    </div>
+                    <div class="card-footer justify-content-around row">
+                      Stacjonarnie
+                      <a href="#contact"><i class="fab fa-discord"></i></a>
+                    </div>
+                </div>
+
+                <!-- person 6 -->
+                <div class="card">
+                    <img src="img/team/jean.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">jean</h5>
+                      <p class="card-text">Native speaker języka francuskiego i angielskiego. Mistrz Excela. Jeśli potrzebujesz motywacji, nie ma lepszej. Jean nie zna polskiego (:</p>
+                    </div>
+                    <div class="card-footer justify-content-around row">
+                      <a href="#"><i class="fab fa-facebook-f"></i></a>
+                      <a href="#"><i class="fas fa-phone-alt"></i></a>
+                    </div>
+                </div>
+
+                <!-- person 7 -->
+                <div class="card">
+                    <img src="img/team/bartek2.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">bartek</h5>
+                      <p class="card-text">Doktorant fizyki. Specjalista od wiązki ciężkich jonów w CERNie. Organizator Pyrkonów, a także aktywny członek ŚKF-u.</p>
+                    </div>
+                    <div class="card-footer justify-content-around row">
+                        Stacjonarnie
+                      <a href="#"><i class="fab fa-facebook-f"></i></a>
+                      <a href="#contact"><i class="fab fa-slack"></i></a>
+                    <a href="#contact"><i class="fab fa-discord"></i></a>
+                    </div>
+                </div>
+
+                <!-- person 8 -->
+                <div class="card">
+                    <img src="img/team/mateusz3.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">mateusz</h5>
+                      <p class="card-text">Obieżyświat. Autostopem zwiedził niemal całą Europę. Nauczy Cię matematyki, ekonomii i angielskiego, a po wszystkim uraczy opowieścią.</p>
+                    </div>
+                    <div class="card-footer justify-content-around row">
+                        <a href="#contact"><i class="fab fa-discord"></i></a>
+                    </div>
+                </div>
+
+                <!-- person 9 -->
+                <div class="card">
+                    <img src="img/team/basia.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">basia</h5>
+                      <p class="card-text">Nie straszny Ci czarny kot leżący na wezgłowiu? W takim razie poznasz angielski od posiadaczki certyfikatów CAE i CPE. Sędzia speedcubingu.</p>
+                    </div>
+                    <div class="card-footer justify-content-around row">
+                      Tylko stacjonarnie - u nauczyciela
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="achievements" class=scroll-fix>
+        <div class="jumbotron jumbotorn-fluid">
+            <h2 class="os-animation visibility" data-animation="fadeIn">osiagnięcia</h2>
+            <div class="underline os-animation visibility" data-animation="fadeIn" data-delay=".1s"></div>
+        
+            <div class="wrapper row achievement-list">
+                <div class="col-md-6 col-lg-4 col-xl-2 achievement os-animation visibility" data-animation="bounceIn" data-delay=".2s">
+                    <i class="fas fa-thumbs-up"></i>
+                    <p class="achievement-number">100%</p>
+                    <p class="achievement-text">zadowolonych klientów</p>
+                </div>
+
+                <div class="col-md-6 col-lg-4 col-xl-2 achievement os-animation visibility" data-animation="bounceIn" data-delay=".4s">
+                    <i class="fas fa-trophy"></i>
+                    <p class="achievement-number">37</p>
+                    <p class="achievement-text">zdobytych nagród</p>
+                </div>
+
+                <div class="col-md-6 col-lg-4 col-xl-2 achievement os-animation visibility" data-animation="bounceIn" data-delay=".1s">
+                    <i class="fas fa-user-friends"></i>
+                    <p class="achievement-number">143</p>
+                    <p class="achievement-text">pracowników</p>
+                </div>
+
+                <div class="col-md-6 col-lg-4 col-xl-2 achievement os-animation visibility" data-animation="bounceIn" data-delay=".35s">
+                    <i class="far fa-building"></i>
+                    <p class="achievement-number">7</p>
+                    <p class="achievement-text">biur zlokalizowanych na całym świecie</p>
+                </div>
+
+                <div class="col-md-6 col-lg-4 col-xl-2 achievement os-animation visibility" data-animation="bounceIn" data-delay=".25s">
+                    <i class="fas fa-dice"></i>
+                    <p class="achievement-number">58</p>
+                    <p class="achievement-text">stworzonych gier</p>
+                </div>
+
+                <div class="col-md-6 col-lg-4 col-xl-2 achievement os-animation visibility" data-animation="bounceIn" data-delay=".3s">
+                    <i class="fas fa-share-alt"></i>
+                    <p class="achievement-number">80.000</p>
+                    <p class="achievement-text">fanów w mediach społecznościowych</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="scroll-fix">
+        <div class="jumbotron jumbotron-fluid">
+            <div class="contact-shadow"></div>
+
+            <h2>kontakt</h2>
+            <div class="underline"></div>
+
+            <div class="wrapper row text-center contact-us">
+                <div class="contact-item col-sm-6 col-lg-4 order-1 order-lg-1">
+                    <h3>główna siedziba</h3>
+                    <p>Ze wzgledu na panującą w kraju sytuację zwiazaną z pandemią COVID-19, postanowiliśmy, że w trosce o Wasze bezpieczeństwo wszystkie zajęcia będą odbywać się zdalnie, aż do odwołania.</p>
+                </div>
+                <div class="contact-item col-sm-12 col-lg-4 order-0 order-lg-1">
+                </div>
+                <div class="contact-item col-sm-6 col-lg-4 order-1 order-lg-1">
+                    <h3>filia w suchej beskidzkiej</h3>
+                    <p>Na czas pandemii - tylko zdalnie. Jeśli jednak poszukujesz korepetytorów stacjonarnych z Twojego regionu, sprawdź oferty na <a href="https://e-korepetycje.net">e-korepetycje.net</a>. Na pewno znajdziesz świetnie przygotowane osoby (:</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>
+            &copy; 2020 Mateusz Kozieł
+        </p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+
+    <script src="js/animation.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
