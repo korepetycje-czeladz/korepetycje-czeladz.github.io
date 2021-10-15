@@ -291,6 +291,18 @@ header .fa-chevron-down {
   margin-top: 30px;
 }
 
+.btc-offer-1 {
+  display: none;
+}
+
+.btc-offer-2 {
+  display: none;
+}
+
+.btc-offer-3 {
+  display: none;
+}
+
 #team .jumbotron {
   position: relative;
   background-image: url("../img/room.jpg");

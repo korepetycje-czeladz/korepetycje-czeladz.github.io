@@ -48,3 +48,64 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+// async function change(value, offerNumber) {
+//     await fetch(`https://blockchain.info/tobtc?currency=PLN&value=${value}`).then(function(response) {
+//     response.text().then(function(text) {
+//       let offer = document.document.querySelector(`.btc-offer-${offerNumber}`);
+//       let nr = +text;
+//       let rounded = +nr.toFixed(5);
+//       offer.textContent = `od ${rounded} BTC/h`;
+//     });
+//   });
+// }
+
+let convert = document.querySelector('.convert');
+function convertCurrency() {
+    let plnOffer1 = document.querySelector('.pln-offer-1');
+    let plnOffer2 = document.querySelector('.pln-offer-2');
+    let plnOffer3 = document.querySelector('.pln-offer-3');
+    let btcOffer1 = document.querySelector('.btc-offer-1');
+    let btcOffer2 = document.querySelector('.btc-offer-2');
+    let btcOffer3 = document.querySelector('.btc-offer-3');
+
+    if (plnOffer1.style.display !== 'none') {
+        plnOffer1.style.display = 'none';
+        plnOffer2.style.display = 'none';
+        plnOffer3.style.display = 'none';
+        btcOffer1.style.display = 'inline';
+        btcOffer2.style.display = 'inline';
+        btcOffer3.style.display = 'inline';
+
+        fetch(`https://blockchain.info/tobtc?currency=PLN&value=49`).then(function(response) {
+            response.text().then(function(text) {
+              let nr = +text;
+              let rounded = +nr.toFixed(5);
+              btcOffer1.innerHTML = `od <i class="fab fa-btc"></i>${rounded}/h`;
+            });
+          });
+
+        fetch(`https://blockchain.info/tobtc?currency=PLN&value=46`).then(function(response) {
+        response.text().then(function(text) {
+            let nr = +text;
+            let rounded = +nr.toFixed(5);
+            btcOffer2.innerHTML = `od <i class="fab fa-btc"></i>${rounded}/h`;
+        });
+        });
+
+        fetch(`https://blockchain.info/tobtc?currency=PLN&value=40`).then(function(response) {
+        response.text().then(function(text) {
+            let nr = +text;
+            let rounded = +nr.toFixed(5);
+            btcOffer3.innerHTML = `od <i class="fab fa-btc"></i>${rounded}/h`;
+        });
+        });
+    } else {
+        plnOffer1.style.display = '';
+        plnOffer2.style.display = '';
+        plnOffer3.style.display = '';
+        btcOffer1.style.display = '';
+        btcOffer2.style.display = '';
+        btcOffer3.style.display = '';
+    }
+}
+convert.addEventListener('click', convertCurrency);
